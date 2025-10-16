@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhid Hassan — Portfolio</title>
+  <meta name="description" content="Portfolio of Muhid Hassan — Connected Vehicles, IoT Security, and Scalable Cloud–Edge Systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; --fg:#e6e9f2; --mut:#a7b0c0; --acc:#6ea8fe; --bd:#1f2a44;
+      --card:#111a2e; --chip:#17223a; --link:#9cc0ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg);}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:24px}
+    header{display:flex; gap:16px; justify-content:space-between; align-items:center; padding:18px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand .logo{width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,#29539b,#1e3a8a); display:grid; place-items:center; font-weight:700}
+    nav a{margin-left:16px; font-weight:500}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; background:var(--acc); color:#0b1220; font-weight:600; box-shadow:0 6px 18px rgba(110,168,254,.25)}
+    .btn:hover{text-decoration:none; filter:saturate(1.05)}
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:22px; align-items:center; padding:18px 0 8px}
+    .hero h1{font-size:2.2rem; line-height:1.15; margin:.2rem 0 .8rem}
+    .hero p{color:var(--mut); margin:0 0 1.2rem}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.6rem 0 1.3rem}
+    .chip{padding:6px 10px; border-radius:999px; background:var(--chip); color:#cfe0ff; font-size:.85rem; border:1px solid var(--bd)}
+    .card{background:var(--card); border:1px solid var(--bd); border-radius:16px; padding:18px}
+    h2{font-size:1.35rem; margin:2rem 0 .6rem}
+    .grid{display:grid; gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .item h3{margin:.2rem 0 .35rem; font-size:1.05rem}
+    .meta{color:var(--mut); font-size:.92rem}
+    .row{display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+    footer{color:var(--mut); border-top:1px solid var(--bd); margin-top:28px; padding:18px 0 28px}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background:#0e162b; border:1px solid var(--bd); border-radius:8px; padding:2px 6px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhid Hassan",
+    "url": "https://<your-username>.github.io/",
+    "jobTitle": "PhD Student — Software Engineering",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Arizona"},
+    "knowsAbout": ["Connected Vehicles", "IoT Security", "V2X", "Cloud", "Edge"],
+    "sameAs": [
+      "https://www.linkedin.com/in/<your-handle>",
+      "https://scholar.google.com/citations?user=<id>",
+      "https://github.com/<your-username>"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MH</div>
+        <div>
+          <strong>Muhid Hassan</strong><br/>
+          <span class="meta">Connected Vehicles • IoT Security • Cloud–Edge</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#pubs">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero card">
+      <div>
+        <h1>Building safer roads with cooperative, secure V2X systems.</h1>
+        <p>
+          I design scalable cloud–edge pipelines for Traffic Incident Messages (TIM),
+          Personal/Basic Safety Messages (PSM/BSM), and georouted MQTT over Verizon ETX.
+        </p>
+        <div class="chips">
+          <span class="chip">C‑V2X</span>
+          <span class="chip">MQTT • GeoRelevance</span>
+          <span class="chip">Docker • CI/CD</span>
+          <span class="chip">Protobuf</span>
+          <span class="chip">DevSecOps</span>
+        </div>
+        <div class="row">
+          <a class="btn" href="https://github.com/<your-username>" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#pubs">Google Scholar →</a>
+          <a href="resume.pdf">Resume</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Highlights</h3>
+        <ul>
+          <li>Herbold Fellow 2025–2026; MAECI Scholar (Italy).</li>
+          <li>ETX client for TLS MQTT, GeoRoutedMsg, and live TIM/BSM flows.</li>
+          <li>Dockerized LibSM decoding and UDP listeners for RSU feeds.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid cols-2">
+        <article class="card item">
+          <h3>DriveArizona — ETX TIM/PSM Stack</h3>
+          <p class="meta">Python • Protobuf • TLS MQTT • Docker</p>
+          <p>Unified client to publish/subscribe GeoRoutedMsg with location-based topics, integrating LibSM decoders and UDP listeners.</p>
+          <p><a href="https://github.com/<your-username>/driveAZ_ETX">Repo</a> · <a href="#">Docs</a></p>
+        </article>
+        <article class="card item">
+          <h3>ScholarPaw — Scholarship Platform</h3>
+          <p class="meta">Django • Next.js • Postgres • CI/CD</p>
+          <p>Role-based access, SonarQube checks, and audit-ready release flows for a full-stack scholarship app.</p>
+          <p><a href="https://github.com/<your-username>/ScholarPaw-Django-Backend">Backend</a> · <a href="https://github.com/<your-username>/ScholarPaw-NextJS-Frontend">Frontend</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pubs">
+      <h2>Publications & Preprints</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="row">
+            <strong>Edge‑assisted V2X for Hazard Warnings</strong>
+            <span class="meta">2025 · Under review</span>
+          </div>
+          <p>Scalable MQTT georouting with protobuf, latency/throughput evaluation on city corridors.</p>
+          <p><a href="#">PDF</a> · <a href="#">BibTeX</a></p>
+        </div>
+        <div class="card">
+          <div class="row">
+            <strong>DevSecOps Patterns for IoT</strong>
+            <span class="meta">2025 · Workshop</span>
+          </div>
+          <p>Threat-driven pipelines, SBOMs, and automated CVE gates for containerized systems.</p>
+          <p><a href="#">PDF</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Talks & Teaching</h2>
+      <div class="grid cols-2">
+        <div class="card item">
+          <h3>Connected Vehicle Lab Seminar</h3>
+          <p class="meta">2025 · University of Arizona</p>
+          <p>Live demo of TIM generation, geohash routing, and vehicle-end subscription.</p>
+        </div>
+        <div class="card item">
+          <h3>TA & Grader</h3>
+          <p class="meta">Software Architecture & Design</p>
+          <p>Led 1:1 sessions, rubric-aligned feedback, and reproducible assignment templates.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:<you>@email.com"><you>@email.com</a> · LinkedIn: <a href="https://www.linkedin.com/in/<your-handle>">@<your-handle></a></p>
+        <p>GitHub: <a href="https://github.com/<your-username>">@<your-username></a> · Google Scholar: <a href="https://scholar.google.com/citations?user=<id>">Profile</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <span>© <span id="y"></span> Muhid Hassan</span>
+        <span>•</span>
+        <span>Made with <span aria-label="love">❤</span> and GitHub Pages</span>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=(new Date()).getFullYear();</script>
+</body>
+</html>
