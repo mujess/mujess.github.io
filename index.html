@@ -46,14 +46,14 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Muhid Hassan",
-    "url": "https://<your-username>.github.io/",
+    "url": "https://mujess.github.io/",
     "jobTitle": "PhD Student — Software Engineering",
     "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Arizona"},
-    "knowsAbout": ["Connected Vehicles", "IoT Security", "V2X", "Cloud", "Edge"],
+    "knowsAbout": ["Connected Vehicles", "V2X Systems", "Cyber-Physical Systems", "Cloud Computing", "Edge Computing", "DevSecOps"],
     "sameAs": [
-      "https://www.linkedin.com/in/<your-handle>",
-      "https://scholar.google.com/citations?user=<id>",
-      "https://github.com/<your-username>"
+      "https://www.linkedin.com/in/muhid-hassan",
+      "https://scholar.google.com/citations?user=mGMBg_IAAAAJ&hl=en&authuser=1",
+      "https://github.com/mujess"
     ]
   }
   </script>
@@ -80,28 +80,31 @@
       <div>
         <h1>Building safer roads with cooperative, secure V2X systems.</h1>
         <p>
+          Ph.D. student and Graduate Research Assistant at University of Arizona working on USDOT-funded V2X deployment.
           I design scalable cloud–edge pipelines for Traffic Incident Messages (TIM),
           Personal/Basic Safety Messages (PSM/BSM), and georouted MQTT over Verizon ETX.
         </p>
         <div class="chips">
           <span class="chip">C‑V2X</span>
           <span class="chip">MQTT • GeoRelevance</span>
-          <span class="chip">Docker • CI/CD</span>
-          <span class="chip">Protobuf</span>
+          <span class="chip">Python • C/C++</span>
+          <span class="chip">AWS IoT • MEC</span>
+          <span class="chip">Docker • Kubernetes</span>
           <span class="chip">DevSecOps</span>
         </div>
         <div class="row">
-          <a class="btn" href="https://github.com/<your-username>" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="#pubs">Google Scholar →</a>
+          <a class="btn" href="https://github.com/mujess" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=mGMBg_IAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer">Google Scholar →</a>
           <a href="resume.pdf">Resume</a>
         </div>
       </div>
       <div class="card">
         <h3 style="margin-top:0">Highlights</h3>
         <ul>
-          <li>Herbold Fellow 2025–2026; MAECI Scholar (Italy).</li>
+          <li>Herbold Tier 1 Fellowship 2025; MAECI Scholar (Italy) 2022, 2023.</li>
+          <li>Leading technical demonstration for $1.75M Drive Arizona C-V2X pilot across Maricopa County.</li>
+          <li>Published in Journal of Systems and Software on microservice dependency management.</li>
           <li>ETX client for TLS MQTT, GeoRoutedMsg, and live TIM/BSM flows.</li>
-          <li>Dockerized LibSM decoding and UDP listeners for RSU feeds.</li>
         </ul>
       </div>
     </section>
@@ -110,54 +113,73 @@
       <h2>Projects</h2>
       <div class="grid cols-2">
         <article class="card item">
-          <h3>DriveArizona — ETX TIM/PSM Stack</h3>
-          <p class="meta">Python • Protobuf • TLS MQTT • Docker</p>
-          <p>Unified client to publish/subscribe GeoRoutedMsg with location-based topics, integrating LibSM decoders and UDP listeners.</p>
-          <p><a href="https://github.com/<your-username>/driveAZ_ETX">Repo</a> · <a href="#">Docs</a></p>
+          <h3><a href="https://www.azcommerce.com/iam/projects/drive-arizona/">Drive Arizona – Cellular V2X Pilot</a></h3>
+          <p class="meta">Sept 2023 – Mar 2025 • Python • C-V2X • MQTT • AWS IoT • Docker</p>
+          <p>$1.75M Stage 1 planning grant (AZ Commerce Authority) in partnership with ADOT, MCDOT, MAG, Verizon, HDR, UA, ASU. Led technical demonstration to architect and deploy scalable C-V2X platform across urban intersections with edge-to-cloud data pipelines for real-time safety alerts.</p>
+          <p><a href="https://www.azcommerce.com/iam/projects/drive-arizona/">Project Info</a></p>
         </article>
         <article class="card item">
-          <h3>ScholarPaw — Scholarship Platform</h3>
-          <p class="meta">Django • Next.js • Postgres • CI/CD</p>
-          <p>Role-based access, SonarQube checks, and audit-ready release flows for a full-stack scholarship app.</p>
-          <p><a href="https://github.com/<your-username>/ScholarPaw-Django-Backend">Backend</a> · <a href="https://github.com/<your-username>/ScholarPaw-NextJS-Frontend">Frontend</a></p>
+          <h3>DriveArizona — ETX TIM/PSM Stack</h3>
+          <p class="meta">Python • Protobuf • TLS MQTT • Docker</p>
+          <p>Unified client to publish/subscribe GeoRoutedMsg with location-based topics, integrating LibSM decoders and UDP listeners. Designed data validation and monitoring tools for real-time reliability of SAE J2735 safety messages.</p>
+        </article>
+        <article class="card item">
+          <h3>Cyber-Physical System for Thymio Robots</h3>
+          <p class="meta">2023 • UML/SysML • Simulation</p>
+          <p>Designed system architecture for autonomous mobile robot coordination. Simulated collision avoidance and collaborative behavior using potential field-based navigation algorithms.</p>
+        </article>
+        <article class="card item">
+          <h3>Penetration Testing & Web Security</h3>
+          <p class="meta">2022 • Burp Suite • Metasploit • OWASP ZAP</p>
+          <p>Applied security testing tools on sandboxed systems. Identified critical vulnerabilities and proposed mitigation strategies.</p>
         </article>
       </div>
     </section>
 
     <section id="pubs">
-      <h2>Publications & Preprints</h2>
+      <h2>Publications</h2>
       <div class="grid">
         <div class="card">
           <div class="row">
-            <strong>Edge‑assisted V2X for Hazard Warnings</strong>
-            <span class="meta">2025 · Under review</span>
+            <strong><a href="https://www.sciencedirect.com/science/article/pii/S0164121225000020#d1e6967">Multivocal Literature Review on Microservice Dependencies</a></strong>
+            <span class="meta">2024 · Journal of Systems and Software</span>
           </div>
-          <p>Scalable MQTT georouting with protobuf, latency/throughput evaluation on city corridors.</p>
-          <p><a href="#">PDF</a> · <a href="#">BibTeX</a></p>
-        </div>
-        <div class="card">
-          <div class="row">
-            <strong>DevSecOps Patterns for IoT</strong>
-            <span class="meta">2025 · Workshop</span>
-          </div>
-          <p>Threat-driven pipelines, SBOMs, and automated CVE gates for containerized systems.</p>
-          <p><a href="#">PDF</a></p>
+          <p>Led methodology, investigation, and data curation; synthesized 1,733 academic and 926 grey-literature sources to develop a unified taxonomy of microservice dependency types and management strategies. Identified key gaps and proposed comprehensive roadmap for integrated dependency management solutions.</p>
+          <p><a href="https://www.sciencedirect.com/science/article/pii/S0164121225000020#d1e6967">Read Paper</a></p>
         </div>
       </div>
     </section>
 
     <section id="talks">
-      <h2>Talks & Teaching</h2>
+      <h2>Conferences & Teaching</h2>
       <div class="grid cols-2">
         <div class="card item">
-          <h3>Connected Vehicle Lab Seminar</h3>
-          <p class="meta">2025 · University of Arizona</p>
-          <p>Live demo of TIM generation, geohash routing, and vehicle-end subscription.</p>
+          <h3>International Conference on Transportation and Development</h3>
+          <p class="meta">June 8–11, 2025 · Glendale, AZ</p>
+          <p>Poster: <em>Drive Arizona – Cellular V2X Pilot in Maricopa County, AZ</em></p>
         </div>
         <div class="card item">
-          <h3>TA & Grader</h3>
-          <p class="meta">Software Architecture & Design</p>
-          <p>Led 1:1 sessions, rubric-aligned feedback, and reproducible assignment templates.</p>
+          <h3>ITS America 2024</h3>
+          <p class="meta">April 2024 · Phoenix, AZ</p>
+          <p>Attended discussions on scalable C-V2X deployment strategies and smart mobility innovation.</p>
+        </div>
+        <div class="card item">
+          <h3>CSER 2024</h3>
+          <p class="meta">March 2024 · Conference on Systems Engineering Research</p>
+        </div>
+        <div class="card item">
+          <h3>Program Committee Member</h3>
+          <p class="meta">IEEE SOSE 2024, 2025</p>
+        </div>
+        <div class="card item">
+          <h3>Graduate Teaching Assistant</h3>
+          <p class="meta">Spring 2024 · Software Architecture & Design</p>
+          <p>Supported 60+ students with recitation sessions on design patterns, one-on-one mentoring, and organized peer-review sessions for collaborative code reviews.</p>
+        </div>
+        <div class="card item">
+          <h3>Teaching Assistant</h3>
+          <p class="meta">2018–2019 · Z.H. Sikder University</p>
+          <p>Led weekly lab sessions for Java and Python courses, mentored student teams on final projects covering system architecture and version control.</p>
         </div>
       </div>
     </section>
@@ -165,8 +187,9 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
-        <p>Email: <a href="mailto:<you>@email.com"><you>@email.com</a> · LinkedIn: <a href="https://www.linkedin.com/in/<your-handle>">@<your-handle></a></p>
-        <p>GitHub: <a href="https://github.com/<your-username>">@<your-username></a> · Google Scholar: <a href="https://scholar.google.com/citations?user=<id>">Profile</a></p>
+        <p>Email: <a href="mailto:muhid.hassan@arizona.edu">muhid.hassan@arizona.edu</a> · <a href="mailto:muhid.cse@gmail.com">muhid.cse@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhid-hassan" target="_blank" rel="noreferrer">linkedin.com/in/muhid-hassan</a> · GitHub: <a href="https://github.com/mujess" target="_blank" rel="noreferrer">github.com/mujess</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=mGMBg_IAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer">View Profile</a></p>
       </div>
     </section>
 
